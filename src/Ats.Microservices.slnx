@@ -1,2 +1,8 @@
 <Solution>
+  <Folder Name="/JobService/">
+    <Project Path="JobService/JobService.API/JobService.API.csproj" />
+    <Project Path="JobService/JobService.Application/JobService.Application.csproj" />
+    <Project Path="JobService/JobService.Domain/JobService.Domain.csproj" />
+    <Project Path="JobService/JobService.Infrastructure/JobService.Infrastructure.csproj" />
+  </Folder>
 </Solution>
