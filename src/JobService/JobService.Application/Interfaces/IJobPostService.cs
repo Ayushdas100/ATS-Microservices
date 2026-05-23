@@ -6,5 +6,5 @@ namespace JobService.Application.Interfaces;
 public interface IJobPostService
 {
     Task<Guid> CreateJobAsync(CreateJobPostDto dto);
-    Task<IEnumerable<JobPost>> GetAllJobsAsync();
+    Task<IEnumerable<JobPostDto>> GetAllJobsAsync();
 }

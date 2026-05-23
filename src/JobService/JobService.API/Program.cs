@@ -13,7 +13,11 @@ builder.Services.AddDbContext<JobDbContext>(options =>
 // 2. Register Dependencies (Dependency Injection)
 builder.Services.AddScoped<IJobPostRepository, JobPostRepository>();
 builder.Services.AddScoped<IJobPostService, JobPostService>();
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    // The new standard way to register profiles in AutoMapper 15+
+    cfg.AddProfile<JobService.Application.Profiles.MappingProfile>();
+});
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
